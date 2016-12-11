@@ -1,2 +1,21 @@
 <h5>Creating a new Library</h5>
 <%= link_to 'New Library', new_library_path %>
+
+
+<h1>Libraries</h1>
+<% @libraries.each do |library| %>
+	         
+	  <div>
+	      <li>
+	          <%= library.name %>
+	          
+	      </li>
+	      <li>
+	          <%= library.category %>
+	          
+	      </li>
+	      
+	  </div>
+	  
+		
+	<% end %>
